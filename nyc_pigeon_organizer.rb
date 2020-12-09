@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   name_array = []
 
   #collect all names
-  data[color].each do |x,y|
+  data[:color].each do |x,y|
     name_array += y
   end
   name_array = name_array.uniq
