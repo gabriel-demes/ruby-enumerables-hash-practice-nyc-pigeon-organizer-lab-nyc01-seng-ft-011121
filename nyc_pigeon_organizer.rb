@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
   #add name to keys
   name_array.each do |i|
     new_hash[i] = {color:[],
-      gender:[]
+      gender:[],
       lives:[]}
 
   end
