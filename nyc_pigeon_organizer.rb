@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
   new_hash.each do |x,y|
     data[:color].each do |t,u|
       if u.include? x
-        new_hash[x][:color] += t.to_s
+        new_hash[x][:color].push(t.to_s)
       end
     end
   end
@@ -35,7 +35,7 @@ def nyc_pigeon_organizer(data)
   new_hash.each do |x,y|
     data[:gender].each do |t,u|
       if u.include? x
-        new_hash[x][:gender] += t.to_s
+        new_hash[x][:gender].push(t.to_s)
       end
     end
   end
@@ -44,7 +44,7 @@ def nyc_pigeon_organizer(data)
   new_hash.each do |x,y|
     data[:lives].each do |t,u|
       if u.include? x
-        new_hash[x][:lives] += t.to_s
+        new_hash[x][:lives].push(t.to_s)
       end
     end
   end
