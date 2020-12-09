@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     new_hash[i] = {color:[],
       gender:[]
       lives:[]}
-    
+
   end
 
   #add colors to each key
